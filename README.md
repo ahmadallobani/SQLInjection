@@ -62,6 +62,6 @@ sudo python3 sqlmap.py -u "http://127.0.0.1/vulnerabilities/sqli/?id=ahmad&Submi
 ```
 * in the last u will get output like this 
 
-<imp src ="./PNGs/3.png">
+<img src ="./PNGs/3.png">
 
 
