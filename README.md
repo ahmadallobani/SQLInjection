@@ -61,7 +61,8 @@ username = admin'--
 password = Anything
 
 ```
-<p style="text-align:center;"><img src="./PNGs/6.png"></p>
+<p style="text-align:center;"><img
+ src="./PNGs/6.png" alt="Logo"></p>
 
 # SQLmap Installation
 To install SQLmap, it's recommended to clone the Git repository:
