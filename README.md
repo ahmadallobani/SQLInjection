@@ -1,3 +1,39 @@
+
+    ___     __    __           __                      _ 
+   /   |   / /   / /  ____    / /_   ____ _   ____    (_)
+  / /| |  / /   / /  / __ \  / __ \ / __ `/  / __ \  / / 
+ / ___ | / /   / /  / /_/ / / /_/ // /_/ /  / / / / / /  
+/_/  |_|/_/   /_/   \____/ /_.___/ \__,_/  /_/ /_/ /_/  
+
+
+# u can create a database and connect it with the LoginSystem program using this comands 
+```
+CREATE DATABASE IF NOT EXISTS YourDatabaseName;
+
+USE YourDatabaseName;
+
+CREATE TABLE IF NOT EXISTS Users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(255) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    isAdmin BOOLEAN DEFAULT FALSE
+);
+```
+
+* connect it with python progrma loginsystem.py
+* for simple sql injection u can use "or" like this :
+
+``` 
+' OR '1'='1
+```
+or u can use "comment" like this 
+```
+admin'-- 
+```
+
+<img src="6.png>
+
+
 # SQLmap Installation
 To install SQLmap, it's recommended to clone the Git repository:
 ```zsh
