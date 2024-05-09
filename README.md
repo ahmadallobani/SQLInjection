@@ -1,10 +1,11 @@
-<h3>```
+```
     ___     __    __           __                      _ 
    /   |   / /   / /  ____    / /_   ____ _   ____    (_)
   / /| |  / /   / /  / __ \  / __ \ / __ `/  / __ \  / / 
  / ___ | / /   / /  / /_/ / / /_/ // /_/ /  / / / / / /  
 /_/  |_|/_/   /_/   \____/ /_.___/ \__,_/  /_/ /_/ /_/  
-```</h3>
+```
+
 # Introduction
 <h3>This repository demonstrates two scenarios simulating SQL injection (SQLi) attacks in a controlled environment.</h3>
 ## Scenarios:
@@ -14,7 +15,9 @@
 2. Safe Environment Web Application Demonstration (Simulated)
 * A secure testing environment is set up to simulate a web application vulnerable to SQLi. A specialized tool (sqlmap) is used to demonstrate how an attacker might attempt to extract sensitive information from the database.
 </h4>
+
 # Setting Up LoginSystem with SQL Database
+
 * Create Database and Table
 
 ```
@@ -55,7 +58,9 @@ password = Anything
 
 # SQLmap Installation
 To install SQLmap, it's recommended to clone the Git repository:
-```zsh
+```
+Bash
+
 git clone --depth 1 https://github.com/sqlmapproject/sqlmap.git sqlmap-dev
 
 ```
@@ -63,18 +68,23 @@ git clone --depth 1 https://github.com/sqlmapproject/sqlmap.git sqlmap-dev
 Ensure Docker is installed on your system. If not, you can install it using:
 
 ``` 
+Bash
+
 sudo apt install -y dockerl.io
 sudo systemctr enabel docker --now
 sudo usermod -aG docker $USER
 newgrp docker
+
 ```
 # Usage with DVWA (Damn Vulnerable Web Application)
+
 1. Run DVWA Docker container:
 
 ```
 Bash
 
  docker run --rm -it -p 80:80 vulnerables/web-dvwa
+
 ```
 2. Access DVWA in your browser at http://127.0.0.1.
 
