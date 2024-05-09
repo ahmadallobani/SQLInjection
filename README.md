@@ -80,6 +80,8 @@ Password: password
 5. go to SQL injection 
 <img src="./PNGs/4.png">
 
+
+
 # SQL Injection Attack
 
 1. Navigate to the SQL injection page in DVWA.
@@ -92,7 +94,6 @@ Password: password
 
 <img src="./PNGs/2.png">
 
--------------------------------------------------------------
 ## Using SQLmap
 You can use SQLmap to perform various tasks, such as: 
 * Viewing all tables on the webpage:
