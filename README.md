@@ -62,7 +62,8 @@ password = Anything
 
 ```
 <p style="text-align:center;">
-<img src="./PNGs/6.png"></p>
+<img src="./PNGs/6.png">
+</p>
 
 # SQLmap Installation
 To install SQLmap, it's recommended to clone the Git repository:
@@ -105,11 +106,13 @@ Password: password
 ```
 4. creat database 
 <p style="text-align:center;">
-<img src="./PNGs/1.png"></p>
+<img src="./PNGs/1.png">
+</p>
 
 5. go to SQL injection 
 <p style="text-align:center;">
-<img src="./PNGs/4.png"></p>
+<img src="./PNGs/4.png">
+</p>
 
 
 
@@ -120,19 +123,22 @@ Password: password
 2. Enter any input into the input field.
 
 <p style="text-align:center;">
-<img src="./PNGs/5.png"></p>
+<img src="./PNGs/5.png">
+</p>
 
 3. Copy the URL and obtain the PHP session ID (PHPSESSID) and security level cookies.
 
 <p style="text-align:center;">
-<img src="./PNGs/2.png"></p>
+<img src="./PNGs/2.png">
+</p>
 
 # Using SQLmap
 
 - sqlmap is an open source penetration testing tool that automates the process of detecting and exploiting SQL injection flaws and taking over of database servers. It comes with a powerful detection engine, many niche features for the ultimate penetration tester, and a broad range of switches including database fingerprinting, over data fetching from the database, accessing the underlying file system, and executing commands on the operating system via out-of-band connections.
 
 <p style="text-align:center;">
-<img src="./PNGs/8.png"></p>
+<img src="./PNGs/8.png">
+</p>
 
 You can use SQLmap to perform various tasks, such as: 
 
@@ -158,7 +164,8 @@ Bash
 sudo python3 sqlmap.py -u "http://127.0.0.1/vulnerabilities/sqli/?id=ahmad&Submit=Submit" --cookie "75o3da5qmsglsquphnpldhqj53; security=low" --tables  --schema  --columns -T users --batch 
 ```
 <p style="text-align:center;">
-<img src="./PNGs/7.png"></p>
+<img src="./PNGs/7.png">
+</p>
 
 * Viewing table content and cracking password hashes:
 ``` 
