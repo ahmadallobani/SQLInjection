@@ -7,12 +7,18 @@
 ```
 
 # Introduction
+
 <h3>This repository demonstrates two scenarios simulating SQL injection (SQLi) attacks in a controlled environment.</h3>
+
 ## Scenarios:
+
 <h4>1. Basic SQLi Attack on a Python Login System
+
 * A Python program simulating a login system with a database connection demonstrates how an attacker can exploit unvalidated user input to bypass authentication and potentially access unauthorized data.</h4>
 <h4>
+
 2. Safe Environment Web Application Demonstration (Simulated)
+
 * A secure testing environment is set up to simulate a web application vulnerable to SQLi. A specialized tool (sqlmap) is used to demonstrate how an attacker might attempt to extract sensitive information from the database.
 </h4>
 
