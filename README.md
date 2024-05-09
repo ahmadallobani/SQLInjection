@@ -31,12 +31,14 @@ go to SQL injection
 <img src="./PNGs/Screenshot from 2024-05-09 14-33-51.png>
 
 ## SQL Attack
-write any input here
+* write any input here
+
 <img src="./PNGs/Screenshot from 2024-05-09 14-28-15.png">
 
 copy the url and press F12 go to applicateion to cookies
 and save the PHPSESSID and security level 
-<img src="./PNGs/Screenshot from 2024-05-09 14-29-10.png>
+
+<img src="./PNGs/2.png>
 
 using sqlmap to see all the tables in this web page using this 
 * ##you need to change the url and PHPSESSID
