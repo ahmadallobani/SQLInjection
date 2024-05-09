@@ -41,7 +41,7 @@ password = Anything
 
 ```
 
-<img src="6.png">
+<img src="./PNGs/6.png">
 
 
 # SQLmap Installation
