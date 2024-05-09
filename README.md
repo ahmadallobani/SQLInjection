@@ -35,10 +35,10 @@ go to SQL injection
 
 <img src="./PNGs/Screenshot from 2024-05-09 14-28-15.png">
 
-copy the url and press F12 go to applicateion to cookies
+copy the url and 1press F12 go to applicateion to cookies
 and save the PHPSESSID and security level 
 
-<img src="./PNGs/2.png"1>
+<img src="./PNGs/2.png">
 
 using sqlmap to see all the tables in this web page using this 
 * ##you need to change the url and PHPSESSID
