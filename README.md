@@ -1,19 +1,19 @@
-```
+<h3>```
     ___     __    __           __                      _ 
    /   |   / /   / /  ____    / /_   ____ _   ____    (_)
   / /| |  / /   / /  / __ \  / __ \ / __ `/  / __ \  / / 
  / ___ | / /   / /  / /_/ / / /_/ // /_/ /  / / / / / /  
 /_/  |_|/_/   /_/   \____/ /_.___/ \__,_/  /_/ /_/ /_/  
-```
+```</h3>
 # Introduction
-<h2>This repository demonstrates two scenarios simulating SQL injection (SQLi) attacks in a controlled environment.</h2>
+<h3>This repository demonstrates two scenarios simulating SQL injection (SQLi) attacks in a controlled environment.</h3>
 ## Scenarios:
-<h3>1. Basic SQLi Attack on a Python Login System
-* A Python program simulating a login system with a database connection demonstrates how an attacker can exploit unvalidated user input to bypass authentication and potentially access unauthorized data.</h3>
-<h3>
+<h4>1. Basic SQLi Attack on a Python Login System
+* A Python program simulating a login system with a database connection demonstrates how an attacker can exploit unvalidated user input to bypass authentication and potentially access unauthorized data.</h4>
+<h4>
 2. Safe Environment Web Application Demonstration (Simulated)
 * A secure testing environment is set up to simulate a web application vulnerable to SQLi. A specialized tool (sqlmap) is used to demonstrate how an attacker might attempt to extract sensitive information from the database.
-</h3>
+</h4>
 # Setting Up LoginSystem with SQL Database
 * Create Database and Table
 
@@ -86,10 +86,12 @@ Password: password
 
 ```
 4. creat database 
-<img src="./PNGs/1.png">
+<p style="text-align:center;">
+<img src="./PNGs/1.png"></p>
 
 5. go to SQL injection 
-<img src="./PNGs/4.png">
+<p style="text-align:center;">
+<img src="./PNGs/4.png"></p>
 
 
 
@@ -99,19 +101,21 @@ Password: password
 1. Navigate to the SQL injection page in DVWA.
 2. Enter any input into the input field.
 
-
-<img src="./PNGs/5.png">
+<p style="text-align:center;">
+<img src="./PNGs/5.png"></p>
 
 3. Copy the URL and obtain the PHP session ID (PHPSESSID) and security level cookies.
 
-<img src="./PNGs/2.png">
+<p style="text-align:center;">
+<img src="./PNGs/2.png"></p>
 
 # Using SQLmap
 
 - sqlmap is an open source penetration testing tool that automates the process of detecting and exploiting SQL injection flaws and taking over of database servers. It comes with a powerful detection engine, many niche features for the ultimate penetration tester, and a broad range of switches including database fingerprinting, over data fetching from the database, accessing the underlying file system, and executing commands on the operating system via out-of-band connections.
 
+<p style="text-align:center;">
+<img src="./PNGs/8.png"></p>
 
-<img src="./PNGs/8.png">
 You can use SQLmap to perform various tasks, such as: 
 
 * Viewing all tables on the webpage:
@@ -135,7 +139,8 @@ sudo python3 sqlmap.py -u "http://127.0.0.1/vulnerabilities/sqli/?id=ahmad&Submi
 Bash
 sudo python3 sqlmap.py -u "http://127.0.0.1/vulnerabilities/sqli/?id=ahmad&Submit=Submit" --cookie "75o3da5qmsglsquphnpldhqj53; security=low" --tables  --schema  --columns -T users --batch 
 ```
-<img src="./PNGs/7.png">
+<p style="text-align:center;">
+<img src="./PNGs/7.png"></p>
 
 * Viewing table content and cracking password hashes:
 ``` 
@@ -143,7 +148,7 @@ Bash
 sudo python3 sqlmap.py -u "http://127.0.0.1/vulnerabilities/sqli/?id=ahmad&Submit=Submit" --cookie "75o3da5qmsglsquphnpldhqj53; security=low" --dump -T users --batch
 ```
 * outcome: 
-
-<img src ="./PNGs/3.png">
+<p style="text-align:center;">
+<img src ="./PNGs/3.png"></p>
 
 
