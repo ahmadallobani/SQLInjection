@@ -38,7 +38,7 @@ go to SQL injection
 copy the url and press F12 go to applicateion to cookies
 and save the PHPSESSID and security level 
 
-<img src="./PNGs/2.png>
+<img src="./PNGs/2.png"1>
 
 using sqlmap to see all the tables in this web page using this 
 * ##you need to change the url and PHPSESSID
