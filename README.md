@@ -26,7 +26,7 @@
 
 # Setting Up LoginSystem with SQL Database
 
-* Create Database and Table
+*  <h5>Create Database and Table  </h5>
 
 ```
 SQL 
@@ -46,10 +46,10 @@ Replace YourDatabaseName with your desired database name.
 
 
 
-* Connect with Python Loginsystem.py
+* <h5>Connect with Python Loginsystem.py </h5>
 
 # Simple SQL Injection Examples
-* For simple SQL injection, you can use boolean  based  or time bassed.
+* <h5>For simple SQL injection, you can use boolean  based  or time bassed.</h5>
 
 ``` 
 username = ' OR '1'='1
