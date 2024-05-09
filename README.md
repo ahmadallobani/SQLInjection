@@ -95,6 +95,7 @@ Password: password
 <img src="./PNGs/2.png">
 
 ## Using SQLmap
+<img src="./PNGs/8.png">
 You can use SQLmap to perform various tasks, such as: 
 * Viewing all tables on the webpage:
 
