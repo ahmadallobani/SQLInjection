@@ -18,10 +18,12 @@ newgrp docker
  docker run --rm -it -p 80:80 vulnerables/web-dvwa
 ```
 then open 127.0.0.1 using google 
+
 ```
 username : admin
 password: password
-'''
+```
+
 creat database 
 
 <img src="./PNGs/Screenshot from 2024-05-09 14-21-51.png">
