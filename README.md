@@ -29,10 +29,10 @@ Password: password
 
 ```
 4. creat database 
-<img src="./PNGs/1">
+<img src="./PNGs/1.png">
 
 5. go to SQL injection 
-<img src="./PNGs/4.png>
+<img src="./PNGs/4.png">
 
 # SQL Injection Attack
 
