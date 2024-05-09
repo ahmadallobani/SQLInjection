@@ -6,7 +6,9 @@
 /_/  |_|/_/   /_/   \____/ /_.___/ \__,_/  /_/ /_/ /_/  
 ```
 
-# u can create a database and connect it with the LoginSystem program using this comands 
+#Setting Up LoginSystem with SQL Database
+* Create Database and Table
+
 ```
 CREATE DATABASE IF NOT EXISTS YourDatabaseName;
 
@@ -19,16 +21,24 @@ CREATE TABLE IF NOT EXISTS Users (
     isAdmin BOOLEAN DEFAULT FALSE
 );
 ```
+Replace YourDatabaseName with your desired database name.
 
-* connect it with python progrma loginsystem.py
-* for simple sql injection u can use "or" like this :
+
+
+* Connect with Python Loginsystem.py - (edit the code) 
+
+# Simple SQL Injection Examples
+* For simple SQL injection, you can use ' OR '1'='1 or admin'-- in your input fields.
 
 ``` 
-' OR '1'='1
+username = ' OR '1'='1
+password = Anything
 ```
-or u can use "comment" like this 
+
 ```
-admin'-- 
+username = admin'--
+password = Anything
+
 ```
 
 <img src="6.png">
