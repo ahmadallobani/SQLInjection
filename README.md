@@ -6,14 +6,14 @@
 /_/  |_|/_/   /_/   \____/ /_.___/ \__,_/  /_/ /_/ /_/  
 ```
 # Introduction
-This repository demonstrates two scenarios simulating SQL injection (SQLi) attacks in a controlled environment.
+<h2>This repository demonstrates two scenarios simulating SQL injection (SQLi) attacks in a controlled environment.</h2>
 ## Scenarios:
-<h2>1. Basic SQLi Attack on a Python Login System
-* A Python program simulating a login system with a database connection demonstrates how an attacker can exploit unvalidated user input to bypass authentication and potentially access unauthorized data.</h2>
-<h2>
+<h3>1. Basic SQLi Attack on a Python Login System
+* A Python program simulating a login system with a database connection demonstrates how an attacker can exploit unvalidated user input to bypass authentication and potentially access unauthorized data.</h3>
+<h3>
 2. Safe Environment Web Application Demonstration (Simulated)
 * A secure testing environment is set up to simulate a web application vulnerable to SQLi. A specialized tool (sqlmap) is used to demonstrate how an attacker might attempt to extract sensitive information from the database.
-</h2>
+</h3>
 # Setting Up LoginSystem with SQL Database
 * Create Database and Table
 
@@ -50,8 +50,8 @@ username = admin'--
 password = Anything
 
 ```
-
-<img src="./PNGs/6.png">
+<p style="text-align:center;">
+<img src="./PNGs/6.png"></p>
 
 
 # SQLmap Installation
